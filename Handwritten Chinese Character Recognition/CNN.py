@@ -2,7 +2,7 @@ import tensorflow as tf
 import config
 
 
-def cnn(X, Y):
+def cnn(X):
     input_layer = tf.reshape(X, [-1, config.image_hight, config.image_width, 1])
 
     # Input Tensor Shape: [batch_size, 128, 128, 1]
